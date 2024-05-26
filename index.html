@@ -4,62 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Заголовок h1</h1>
-    <table cellspacing="20">
-        <tr>
-            <td><img src="Kartinka.jpg" width="400px" alt="Пикчер в отпуске"></td>
-            <td> <p>Вот такой вот параграф, <em>с наклонным и <strong>жирным текстом</strong></em></p>
-                <p>Вот такой вот обычный параграф еще</p></td>
-        </tr>
-    </table>
-
-    <hr>
-
-    <h2>Заголовок h2</h2>
-    <p>Закинем сюда списочки:</p>
-    <ul>
-        <li>Пупа</li>
-        <li>Лупа</li>
-        <li>Медведь</li>
-        <ol type="I">
-        <li>Як</li>
-        <li>Цидрак</li>
-        <li>Цидракакони</li>
-        </ol>
-    </ul>
-    <ol>
-        <li><a href="https://www.youtube.com/watch?v=Z8ANihFXlgU">youtube</a></li>
-        <li><a href="https://www.youtube.com/watch?v=Z8ANihFXlgU" target="_blank">youtube</a>, но в новой вкладке</li>
-        <li>Цидракакони</li>
-    </ol>
-    <h3>Заголовок h3</h3>
-    <p><a href="new.html">Переход на новую страницу!</a> А там такиииие приколы</p>
-
-    <hr>
-
-<h2>Форма формирование</h2>
-<form>
-<label for="name">Оставь закорючку: </label>
-<input type="text" id="name" placeholder="Закорючивай">
-
-<br>
-
-<label for="">Разные приколы: </label>
-<input type="checkbox" >
-<input type="color" >
-<input type="password" >
-
-<br>
-<label for="">Насколько ты гей?</label>
-<input type="range" name="" id="">
-<br>
-<label for="mommy">Оставь отзыв о своей маме:</label>
-<br>
-<textarea name="mommy" id="mommy"></textarea>
-<br>
-<input type="submit" value="НАЖМИ!!!">
-</form>
+    <div id="main">
+        <div id="mainUp">
+            <div id="header1">
+                <h1>Заголовок h1</h1>
+                <img class="monkey" src="Kartinka.jpg" alt="Пикчер в отпуске">
+                <p>Вот такой вот перерыв, <em>с шишом <strong>и кумаром</strong></em></p> 
+            </div>
+            <div id="header2">
+                <h1>Заголовок h1</h1>
+                <img class="monkey" src="Kartinka.jpg" alt="Пикчер в отпуске">
+                <p>Вот такой вот перерыв, <em>с шишом <strong>и кумаром</strong></em></p> 
+            </div>
+            <div id="header3">
+                <h1>Заголовок h1</h1>
+                <img class="monkey" src="Kartinka.jpg" alt="Пикчер в отпуске">
+                <p>Вот такой вот перерыв, <em>с шишом <strong>и кумаром</strong></em></p> 
+            </div>
+        </div>        
+        <div id="center" class="size">
+            <h2>Заголовок h2</h2>
+            <h4>Список пидарасов:</h4>
+            <ul>
+                    <li>Андрей Л</li>
+                    <li>Линцов Андрей</li>
+                    <li>Линцов</li>
+                <ol type="I">
+                    <li>Раз</li>
+                    <li>Два</li>
+                    <li>Три</li>
+                </ol>
+            </ul>
+            <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ссылочка</a> | <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Ссылочка</a>, но в новой вкладке</p>           
+        </div>  
+        <div id="centerF" class="size">
+            <h3>Заголовок h3</h3>
+            <p><a href="new.html">Переход на новую страницу!</a> А там медведь сгорел!</p>
+        </div>
+        <div id="forms" class="size">
+            <h2>Форма формирование</h2>
+                <form>
+                    <div class="row">                   
+                        <div id="form-group">
+                            <label for="name">Оставь закорючку: </label>
+                            <input class="text" type="text" id="name" placeholder="Закорючивай">
+                        </div>
+                        <div id="form-group">
+                            <label for="">Разные приколы: </label>
+                            <input class="text" type="password">
+                            <input type="checkbox" >
+                        <input type="color" > 
+                        </div>  
+                    </div>    
+                    <div id="form-group">
+                        <label for="">Насколько ты гей?</label>
+                        <input class="text" type="range" name="" id="">
+                    </div>
+                    <div id="form-group">
+                        <label for="mommy">Оставь отзыв о маме Андрея Линцова:</label>
+                        <textarea class="text"></textarea>
+                    </div>
+                    <input type="button" id="btn" value="НАЖМИ!!!">
+                </form>
+        </div>
+    </div>  
 </body>
 </html>
